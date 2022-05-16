@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NETFLIX</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://cdnweb01.wikitree.co.kr/webdata/editor/202107/09/img_20210709101438_deb5dbfb.webp"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .gridbox{
+        width: 1000px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        font-size: 60px;
+    }
+    header {
+        grid-column: 1/4;
+        background: green;
+    }
+
+    .box2{
+        grid-column: 2/4;
+        background-color: yellow;
+    }
+
+    .box_b1{
+        grid-row: 3/6;
+        background-color: aquamarine;
+    }
+
+    .box_b2{
+        grid-row: 3/4;
+        background-color: antiquewhite;
+    }
+    .box_b3{
+        grid-row: 3/5;
+        background-color: violet;
+    }
+    .box_b4{
+        grid-row: 4/6;
+        background-color: yellowgreen;
+    }
+    .box_b5{
+        grid-row: 5/6;
+        background-color: yellow;
+    }
+    </style>
 </head>
 <body>
-  <section>
-    <h1>
-      <img src="./images/logo.png">
-    </h1> 
-    <p>영화와 시리즈를<br>무제한으로</p>
-  </section>
-
-  <div class="container">
-    <img src="./images/main_img01.jpg" alt="이미지1">
-    <img src="./images/main_img02.jpg" alt="이미지2">
-    <img src="./images/main_img01.jpg" alt="이미지3">
-  </div>
-  
-          </div>
-  </main>
-  
+    <div class="gridbox">
+        <header>grid</header>
+        <div>1</div>
+        <div class="box2">2</div>
+        <div class="box_b1">b1</div>
+        <div class="box_b2">b2</div>
+        <div class="box_b3">b3</div>
+        <div class="box_b4">b4</div>
+        <div class="box_b5">b5</div>
+    </div>
 </body>
 </html>
